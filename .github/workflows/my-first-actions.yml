@@ -11,10 +11,10 @@ jobs:
   #         node-version: '14'
   #     - run: npm install -g bats
   #     - run: bats -v
-  phptest:
+  echoecho:
     runs-on: ubuntu-18.04
     steps:
-      - name: Test met | teken
+      - name: Test met zonder pipe teken
         env:
           BLA: Dit is geblaat
         run: echo "$BLA zonder pipe teken."
@@ -22,4 +22,4 @@ jobs:
         env:
           BLABLA: Dit is geblaat
         run: |
-        echo "$BLABLA met een pipe teken"
+          echo "$BLABLA met een pipe teken"
