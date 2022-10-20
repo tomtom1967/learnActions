@@ -18,5 +18,6 @@ jobs:
         env:
           BLA: Dit is geblaat
         run: echo "$BLA zonder pipe teken."
+        - name: Nu met een pipe
         run: |
           echo "$BLA met een pipe teken"
