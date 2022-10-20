@@ -11,7 +11,11 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
-  whoami:
-    runs-on: ubuntu-latest
+  phptest:
+    runs-on: ubuntu-18.04
     steps:
-      - run: whoami 
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.1'
+          extensions: xdebug
+          tools: php-cs-fixer, phpunit
