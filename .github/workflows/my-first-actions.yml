@@ -14,8 +14,8 @@ jobs:
   phptest:
     runs-on: ubuntu-18.04
     steps:
-      - uses: shivammathur/setup-php@v2
-        with:
-          php-version: '7.1'
-          extensions: xdebug
-          tools: php-cs-fixer, phpunit
+    env:
+      BLA: Dit is geblaat
+      run: |
+        echo waarom $BLA een pipe teken?
+      run: echo kan $BLA ook zonder pipe teken toch?
