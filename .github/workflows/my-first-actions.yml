@@ -17,5 +17,5 @@ jobs:
       - name: Test met | teken
         env:
           BLA: Dit is geblaat
-        run: |
-        echo waarom $BLA een pipe teken?
+        run: | 
+          echo waarom $BLA een pipe teken?
