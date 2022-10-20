@@ -14,8 +14,9 @@ jobs:
   phptest:
     runs-on: ubuntu-18.04
     steps:
-    env:
-      BLA: Dit is geblaat
+      - name: Test met | teken
+      env:
+        BLA: Dit is geblaat
       run: |
         echo waarom $BLA een pipe teken?
       run: echo kan $BLA ook zonder pipe teken toch?
